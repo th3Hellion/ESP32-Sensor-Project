@@ -1,6 +1,7 @@
 # Battery Powered Temperature and Humidity Weather Station
 
 **Name:** Nikita Grishin 
+
 **Student ID:** ng222jk
 
 ## Short project overview
