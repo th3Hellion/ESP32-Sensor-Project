@@ -1,7 +1,7 @@
 # Battery Powered Temperature and Humidity Weather Station
 
-**Name:** Nikita Grishin ng222jk
-https://hackmd.io/@lnu-iot/iot-tutorial
+**Name:** Nikita Grishin 
+**Student ID:** ng222jk
 
 ## Short project overview
 
