@@ -118,20 +118,27 @@ I chose to setup visualization stack by running all of it inside of a docker con
 
 ```yaml
 version: "3"
-services:
-  telegraf:
-    image: telegraf
-    container_name: telegraf
-    volumes:
-      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
 
+services:
   influxdb:
     image: influxdb
     container_name: influxdb
     ports:
       - 8086:8086
     volumes:
-      - ./influxdb:/var/lib/influxdb
+      - influxdb_data:/var/lib/influxdb
+    networks:
+      - grafana-net
+
+  telegraf:
+    image: telegraf
+    container_name: telegraf
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    depends_on:
+      - influxdb
+    networks:
+      - grafana-net
 
   grafana:
     image: grafana/grafana
@@ -139,7 +146,25 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./grafana:/var/lib/grafana
+      - grafana_data:/var/lib/grafana
+    networks:
+      - grafana-net
+
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
+    restart: always
+    command: mosquitto -c /mosquitto/config/mosquitto.conf
+
+networks:
+  grafana-net:
+
+volumes:
+  influxdb_data:
+  grafana_data:
 ```
 
 Then I have used `docker-compose up -d
