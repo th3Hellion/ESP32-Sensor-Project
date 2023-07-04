@@ -310,6 +310,7 @@ if ip_address:
     print("Connected to Wi-Fi")
     print("IP address:", ip_address)
 ```
+The 2 additional libraries were provided by the teaching assistants of this course and the lcd_api.py and i2c_lcd.py
 
 ## Transmitting the data / connectivity
 
