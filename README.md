@@ -331,6 +331,8 @@ Since I am self hosting ut, my data can be stored for any amount of time in the 
 Finally the dashboard looks like this
 ![Alt text](/img/image-4.png)
 
+When the data is sent to MQTT broker it is picked up by the Telegraf middleware which will trigger an automatic response to forward and store this data in InfluxDB which is then queried by Grafana dashboard
+
 ## Final design
 
 I really enjoyed working on this project, and it made me realize how much we rely on simple technology in our daily lives. I wish I had more time to create a more complex design, but I fell a bit behind because I had to wait for the Heltec devices, which were hard to find. Despite that, setting up this project was pretty straightforward, thanks to all the parts involved.
