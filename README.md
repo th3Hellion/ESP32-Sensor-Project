@@ -18,12 +18,12 @@ While the design of this monitoring system may be simple, its applications span 
 
 For the project, I have used the following items:
 
-- ESP32
-- DHT11 Temperature and Humidity sensor
-- Breadboard x 2
-- LCD Display
+- ESP32: The ESP32 is a powerful microcontroller board that serves as the brain of my project. It offers WiFi and Bluetooth capabilities, making it ideal for connecting and controlling devices wirelessly.
+- DHT11 Temperature and Humidity sensor: The DHT11 sensor is a small module that measures both temperature and humidity in the surrounding environment. It provides accurate readings, which I can use to monitor and control temperature and humidity levels.
+- Breadboard x 2: Breadboards are handy prototyping tools used to create temporary electrical connections. They allow me to quickly and easily connect various electronic components without soldering, making it convenient for building and testing circuits.
+- LCD Display: is a visual output component that provides a user-friendly interface for my project. It can display text and numbers, allowing me to show real-time temperature and humidity readings or other relevant information.
 - 9V Battery
-- Breadboard Power Module
+- Breadboard Power Module: The breadboard power module is an additional component that enables me to conveniently supply power to my breadboard with a 9V battery.
 - Jumper wires
 
 | Item                                                                                                                                                            | Link                                                                                                                             | Price      |
