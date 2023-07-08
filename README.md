@@ -14,6 +14,8 @@ Dependent on experience this project could be completed in 1-2 hours.
 This project aims to effectively monitor the room temperature in households, catering to the needs of both humans and pets. By ensuring the ideal temperature and humidity levels are maintained, it contributes to a comfortable living environment and the well-being of residents and their animal companions.
 While the design of this monitoring system may be simple, its applications span across various areas, offering numerous benefits to different environments. Its versatility and effectiveness make it an ideal choice for my project, catering to the needs of homes, stores and animal living areas.
 
+This project will give me insights into creating a versatile and effective monitoring system that contributes to comfortable living environments, benefiting humans, pets, homes, stores, and animal living areas.
+
 ## Material
 
 For the project, I have used the following items:
@@ -115,6 +117,8 @@ If you are able to connect then you are sure that it is working, you also can in
 ### Setup a TIG stack
 
 I chose to setup visualization stack by running all of it inside of a docker container, to do that I used docker compose to easily pull the images and make the containers. I mark ports from the container to my local machine this is so that I can access it from `localhost` and make volumes this is to preserve the data and the setting done after restarting the container.
+
+The TIG stack is a powerful data analytics platform that combines Telegraf, InfluxDB, and Grafana to collect, store, and visualize time-series data for monitoring which is great for this project.
 
 ```yaml
 version: "3"
