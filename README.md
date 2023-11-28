@@ -1,9 +1,5 @@
 # Battery Powered Temperature and Humidity Weather Station
 
-**Name:** Nikita Grishin 
-
-**Student ID:** ng222jk
-
 ## Short project overview
 
 This tutorial describes how to create own battery powered temperature and humidity weather station that displays and sends data to a remote server and presents the data as a graph on a webpage.
